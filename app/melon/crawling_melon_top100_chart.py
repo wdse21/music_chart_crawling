@@ -28,7 +28,7 @@ try:
         if(title):
             title_array.append(title)
 
-        artist = data.select_one("td:nth-child(6) > div.wrap > div.wrap_song_info > div.ellipsis.rank02 > a")
+        artist = data.select("td:nth-child(6) > div.wrap > div.wrap_song_info > div.ellipsis.rank02 > a")
         if(len(artist) > 1):
             artist_array.append([i.text for i in artist])
         else :
@@ -44,7 +44,7 @@ try:
         if(title):
             title_array.append(title.text)
 
-        artist = data.select_one("td:nth-child(6) > div.wrap > div.wrap_song_info > div.ellipsis.rank02 > a")
+        artist = data.select("td:nth-child(6) > div.wrap > div.wrap_song_info > div.ellipsis.rank02 > a")
         if(len(artist) > 1):
             artist_array.append([i.text for i in artist])
         else :
