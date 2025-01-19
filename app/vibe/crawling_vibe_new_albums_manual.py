@@ -25,8 +25,8 @@ while True:
         break
     sleep(0.5)
 
-driver.implicitly_wait(time_to_wait=3)
 set_directory = driver.find_elements(By.CSS_SELECTOR, "#content > div > div.sub_list > ul > li.list_item")
+sleep(1)
 
 title_array = []
 artist_array = []
